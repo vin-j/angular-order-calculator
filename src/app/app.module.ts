@@ -1,19 +1,25 @@
+
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component'; // standalone
 import { OrderComponent } from './order/app';
 import { CalculatorComponent } from './calculator/app';
-import { AppRoutingModule } from './app-routing.module';
+import { BankComponent } from './bank/app';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppComponent,         // ⬅️ Standalone component
-    OrderComponent,       // ⬅️ Standalone
-    CalculatorComponent   // ⬅️ Standalone
+    AppComponent,
+    OrderComponent,
+    CalculatorComponent,
+    BankComponent
   ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
