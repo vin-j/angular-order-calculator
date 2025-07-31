@@ -97,7 +97,13 @@
             "styles": [
               "src/styles.css"
             ],
-            "karmaConfig": "karma.conf.js"
+            "karmaConfig": "karma.conf.js",
+
+            "scripts": [
+              "src/assets/js/app.js"
+            ]
+
+
           }
         }
       }
