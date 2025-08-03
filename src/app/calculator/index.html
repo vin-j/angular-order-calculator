@@ -1,18 +1,27 @@
-<div style="text-align:center; max-width: 400px; margin: auto;">
-  <h2>Calculator (No ngModel)</h2>
 
-  <input #num1 type="number" placeholder="First number"><br><br>
+<div class="container">
 
-  <select #op>
-    <option value="+">+</option>
-    <option value="-">−</option>
-    <option value="*">×</option>
-    <option value="/">÷</option>
-  </select><br><br>
 
-  <input #num2 type="number" placeholder="Second number"><br><br>
+  <div class="calculator">
+    <div style="text-align:center; max-width: 400px; margin: auto;">
+      <h2>Calculator (No ngModel)</h2>
 
-  <button (click)="calculate(num1.value, num2.value, op.value)">Calculate</button>
+      <h3 *ngIf="result !== ''">Result: {{ result }}</h3>
 
-  <h3 *ngIf="result !== ''">Result: {{ result }}</h3>
-</div>
+
+      <input #num1 type="number" placeholder="First number"><br><br>
+
+      <select #op>
+        <option value="+">+</option>
+        <option value="-">−</option>
+        <option value="*">×</option>
+        <option value="/">÷</option>
+      </select><br><br>
+
+      <input #num2 type="number" placeholder="Second number"><br><br>
+
+      <button (click)="calculate(num1.value, num2.value, op.value)">Calculate</button>
+
+    </div>
+  </div>
+  </div>

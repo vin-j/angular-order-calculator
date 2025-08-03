@@ -8,6 +8,7 @@ import { BankService } from '../services/bank.service';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './index.html',
+  styleUrls: ['../../styles.css'] // <-- Add this line
 })
 export class BankComponent {
   amount: number = 0;

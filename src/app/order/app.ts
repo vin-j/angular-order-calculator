@@ -10,7 +10,8 @@ interface Product {
   selector: 'app-order',
   standalone: true,
   imports: [CommonModule],  // import common directives like *ngFor, *ngIf
-  templateUrl: './index.html'
+  templateUrl: './index.html',
+  styleUrls: ['../../styles.css']
 })
 export class OrderComponent {
   products: Product[] = [

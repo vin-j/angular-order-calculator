@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-cache-demo',
-  templateUrl: './index.html'
+  templateUrl: './index.html',
+  styleUrls: ['../../styles.css']
 })
 export class CacheComponent {
 

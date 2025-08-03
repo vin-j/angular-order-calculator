@@ -1,12 +1,14 @@
-<h2>Bank App</h2>
+<div class="container">
+  <h2>Bank App</h2>
 
-<input type="number" [(ngModel)]="amount" placeholder="Enter amount" />
-<button (click)="deposit()">Deposit</button>
-<button (click)="withdraw()">Withdraw</button>
+  <input type="number" [(ngModel)]="amount" placeholder="Enter amount" />
+  <button (click)="deposit()">Deposit</button>
+  <button (click)="withdraw()">Withdraw</button>
 
-<p>{{ message }}</p>
+  <p>{{ message }}</p>
 
-<h4>Transaction History</h4>
-<ul>
-  <li *ngFor="let item of bank.getHistory()">{{ item }}</li>
-</ul>
+  <h4>Transaction History</h4>
+  <ul>
+    <li *ngFor="let item of bank.getHistory()">{{ item }}</li>
+  </ul>
+  </div>
